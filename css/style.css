@@ -83,7 +83,7 @@ nav a:hover {
   background-color: #000;
     position: relative;
     width:100%;
-    height: 40vh;
+    height: 25vh;
     overflow: hidden;
 }
 
@@ -119,7 +119,6 @@ nav a:hover {
 .forsidetekst, .forsidetekst p {
 text-align: center;
 padding: 15px 40px;
-font-size: 18;
 }
 
 
@@ -134,8 +133,9 @@ font-size: 18;
 }
 
 .container img {
-  width: 50vh;
+  width: 50%;
   height: auto;
+  margin: 1em;
 }
 
 .larmere {
@@ -180,7 +180,6 @@ main section:nth-child(3) {
 
 
 .larmereoverskrift {
-  margin: 1em;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -189,8 +188,7 @@ main section:nth-child(3) {
 
 .larmereimg {
   width:100%;
-  object-fit: cover;
-  height: 40vh;
+  height: 30vh;
 }
 .tekst1 p, .tekst2 p, .tekst3 p, .tekst4 p, .tekst5 p, .tekst6 p, .tekst7 p, .tekst11 p {
   margin-bottom: 20px;
@@ -259,8 +257,7 @@ margin-bottom: 1em;
   width: 100%;
   height: 225px;
   object-fit: cover;
- 
-      }
+   }
 .contact-section {
   display: grid;
   grid-template-rows: auto auto auto; /* 3 sektioner: header, info, form */
