@@ -1,7 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -14,48 +14,46 @@ h2 {
 }
 p {
   font-size: 18px;
-  margin:0 auto;
 }
 
-section {
-  max-width: 900px;
-  margin: 0 auto;
- padding: 2em;
-}
 
 /*navigation*/
 
-header {
-  display: flex;
-  justify-content: space-between; 
-  background-color: white;
-  border-bottom: #213e32 1px;
+  header {
+    display: flex;
+    justify-content: space-between; 
+    background-color: white;
+  
 
  } 
 
-.logo {
+ .logo {
   height: 8vh;
   width: auto;
   align-items: center;
-}
+  z-index: 1;
+ }
   
-header > nav {
-  display: none; 
-}
+  header > nav {
+        display: none; /* skjuler nav-elementet i mobil-versionen */
+    }
  
+
 nav ul {
-  color: #000;
-  text-align: center;
-  font-size: 22px;
-  list-style: none; 
+
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    list-style: none; 
 }
 nav li {
   padding-bottom: 1em;
 }
 nav a {
-  color:#000;
-  text-decoration: none;
+    color:#000;
+    text-decoration: none;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
@@ -114,7 +112,7 @@ nav a:hover {
 
 .button1 {
   padding: 1.5rem;
-  width: 417px;
+  width: 420px;
   text-align: center;
 }
 
@@ -128,7 +126,6 @@ font-size: 18;
 /*indhold på forside*/ 
 /*boksen*/
 .container {
-  width: 500px;
   margin:0 auto;
   position:relative;
   border-bottom: 3px #000 solid;
@@ -162,7 +159,7 @@ main section:nth-child(3) {
 }
 
 .sektion3 img{
-    width: 50vh;
+    width: 40vh;
     display: block; 
     margin: 0 auto;
     padding: 1.5em;
@@ -181,14 +178,12 @@ main section:nth-child(3) {
 
         /* Lær mere siden */
 
-main section:nth-child(4) {
-   padding-top: 2em;
-   padding-bottom: 2em;
-   border-bottom: 3px #000 solid;
-}
+
 .larmereoverskrift {
   margin: 1em;
   font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 
@@ -197,18 +192,15 @@ main section:nth-child(4) {
   object-fit: cover;
   height: 40vh;
 }
-/*
 .tekst1 p, .tekst2 p, .tekst3 p, .tekst4 p, .tekst5 p, .tekst6 p, .tekst7 p, .tekst11 p {
   margin-bottom: 20px;
-  margin-left: 2em;
-
 }
-  */
 
 .tekst1, .tekst2, .tekst3, .tekst4, .tekst5, .tekst6, .tekst7, .tekst11 h3 {
   padding-bottom: 2em;
   font-size: 20px;
-
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .tekst11, .vaskeguide {
@@ -223,10 +215,9 @@ main section:nth-child(4) {
 /* Billeder på lær mere siden */
 .larmereimg2{
   display: none;
-  max-width: 20em;
 }
 .larmereimg3 {
-  width: 40vw;
+  width: 40vh;
   height: auto;
   display: flex;
   margin: auto;
@@ -234,14 +225,10 @@ main section:nth-child(4) {
 }
 
 .img5 {
-  align-items: center;
-  max-width: 20em;
+  width: 80vw;
   height:auto;
-  object-fit: top;
   margin-left: 1em;
   margin-right: 1em;
-
-
 }
 
 .forskel {
@@ -400,8 +387,6 @@ button:hover {
    text-align: center;
    gap: 2em;
       padding: 2rem 1rem;
- 
-  
 
 }
 
@@ -550,7 +535,7 @@ nav a {
    .tekst3, .larmereimg2 {
   margin-bottom: 2em;
     }
-/*
+
 .tekst1 h3, .tekst2 h3, .tekst3 h3, .tekst4 h3, .tekst5 h3, .tekst6 h3, .tekst7 h3, .tekst11 h3 {
   display: flex; 
   justify-content: center;
@@ -561,7 +546,6 @@ nav a {
   margin-left: 5em ;
   margin-right: 5em;
 }
-  */
 
 .tekst3flex, .larmereimg2, .tekst5flex, .img5{
         display: flex;
@@ -571,7 +555,6 @@ nav a {
 .tekst3flex img, .tekst5flex .img5{
         margin-top: 1em;
         width: 65vh;
-        padding-right: 2em;
     }
   
 .larmereimg3 {
