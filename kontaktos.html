@@ -13,105 +13,93 @@
 <body>
 <header>
 <!--Navigation-->
-     
-        <a href="index.html"><img src="img/logo.png" class="logo" alt="logo af tøjbøjle"></a>
+  <a href="index.html"><img src="img/logo.png" class="logo" alt="logo af tøjbøjle"></a>
       
-  <nav> 
-    <ul>
-              <li><a href="larmere.html">Fakta</a></li>
-              <li><a href="dittoj.html">Dit tøj</a></li>
-              <li><a href="kontaktos.html">Kontakt os</a></li>
-    </ul>
- </nav> 
+<nav> 
+  <ul>
+    <li><a href="larmere.html">Fakta</a></li>
+    <li><a href="dittoj.html">Dit tøj</a></li>
+    <li><a href="kontaktos.html">Kontakt os</a></li>
+  </ul>
+</nav> 
 
-        <button 
-        id="bars"
+<button 
+    id="bars"
          
-         aria-expanded="false" 
-            aria-controls="menu"
-            aria-label="open navigation" 
-        > 
-      <i class="fa-solid fa-bars"></i>
+    aria-expanded="false" 
+    aria-controls="menu"
+    aria-label="open navigation" 
+     > 
+  <i class="fa-solid fa-bars"></i>
+ </button>
+
 </header>
 
-
-
-  <img src="img/contact-img.png" class="contact-img" alt="Forselligt tøj der hænger på en tøjsnor">
+<img src="img/contact-img.png" class="contact-img" alt="Forselligt tøj der hænger på en tøjsnor">
  
+<!-- kontakt-->
+<section class="contact-section">
+ <div class="contact-header">
+  <h1>Kontakt os</h1>
+    <p>Vi elsker, at være i kontakt med jer,</p>
+    <p>så tøv ikke med, at kontakte os vedrørende spørgsmål eller bare en helt uforpligtende samtale.</p>
+ </div>
 
-          
- <!-- kontakt-->
-  <section class="contact-section">
-    <div class="contact-header">
-      <h1>Kontakt os</h1>
-      <p>Vi elsker, at være i kontakt med jer,</p>
-      <p>så tøv ikke med, at kontakte os vedrørende spørgsmål eller bare en helt uforpligtende samtale.</p>
+<section kontakt>
+  <div class="info-text">
+    <div class="phone">
+      <i class="fas fa-phone"></i>
+    </div>
+      <p>Telefon nummer: <a href="tel:+4527700002">+45 27700002</a></p>
+    <div class="email">
+      <i class="fas fa-envelope"></i>
+    </div>
+      <p>E-mail: <a href="mailto:">Groenttojforbrug@info.dk</a></p>
+    <div class="contact-text">
+      <p><strong>Mandag-fredag</strong><p>08:00-16:00</p>
+      <p><strong>Lørdag</strong><p>08:00-12:00</p>
+    </div>
+  </div>
+ </section>
+
+ <main class="kontaktform">
+  <h2>Kontakt os</h2>
+    <p class="kontakt-tekst">Eller skriv til os via kontaktformularen og så vender vi tilbage til dig snarest muligt</p>
+    <form>
+      <label class="visually-hidden" for="navn">Navn</label>
+        <input id="Navn" type="text" placeholder="Navn" required autocomplete="name">
+      <label class="visually-hidden" for="mail">E-mail</label>
+        <input id="mail" type="text" placeholder="E-mail" required autocomplete="email">
+      <label class="visually-hidden" for="Tel">Telefon</label>
+        <input id="Tel" type="tel" placeholder="Telefon">
+    
+    <div class="custom-select">
+      <label for="region">Hvad vil du gerne snakke om?</label>
+      <select id="region">
+        <option value="0" selected="true" disabled>Vælg årsag</option>
+        <option value="1">Er du i tvivl om noget?</option>
+        <option value="2">Vil du vide mere om os?</option>
+        <option value="3">Vil du vide mere om hvad du kan gøre?</option>
+        <option value="4">Vil du være en del af teamet?</option>
+        <option value="5">Hyggesnak</option>
+        <option value="6">Noget andet</option>
+      </select>
     </div>
 
-  <section kontakt>
-     <div class="info-text">
-          <div class="phone">
-            <i class="fas fa-phone"></i>
-          </div>
-        <p>Telefon nummer: <a href="tel:+4527700002">+45 27700002</a></p>
-          <div class="email">
-            <i class="fas fa-envelope"></i>
-          </div>
-        <p>E-mail: <a href="mailto:">Groenttojforbrug@info.dk</a></p>
-        <div class="contact-text">
-        <p><strong>Mandag-fredag</strong><p>08:00-16:00</p>
-        <p><strong>Lørdag</strong><p>08:00-12:00</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <label for="besked">Besked</label>
+      <textarea id="besked" cols="10" rows="10"></textarea>
+      
+        <fieldset>
+          <legend> Vil du kontaktes telefonisk eller på e-mail?</legend>
+              <input id="tlf" type="radio" name="kontakt">
+              <label for="tlf">Telefon</label>
 
-   <main class="kontaktform">
-        <h2>Kontakt os</h2>
-            <p class="kontakt-tekst">Eller skriv til os via kontaktformularen og så vender vi tilbage til dig snarest muligt</p>
+              <input id="mail" type="radio" name="kontakt">
+              <label for="mail">E-mail</label>
+        </fieldset>
 
-         <form>
-            <label class="visually-hidden" for="navn">Navn</label>
-            <input id="Navn" type="text" placeholder="Navn" required autocomplete="name">
-
-            <label class="visually-hidden" for="mail">E-mail</label>
-            <input id="mail" type="text" placeholder="E-mail" required autocomplete="email">
-
-
-            <label class="visually-hidden" for="Tel">Telefon</label>
-            <input id="Tel" type="tel" placeholder="Telefon">
-
-           <div class="custom-select">
-                <label for="region">Hvad vil du gerne snakke om?</label>
-                <select id="region">
-                    <option value="0" selected="true" disabled>Vælg årsag</option>
-                    <option value="1">Er du i tvivl om noget?</option>
-                    <option value="2">Vil du vide mere om os?</option>
-                    <option value="3">Vil du vide mere om hvad du kan gøre?</option>
-                    <option value="4">Vil du være en del af teamet?</option>
-                    <option value="5">Hyggesnak</option>
-                    <option value="6">Noget andet</option>
-                </select>
-            </div>
-
-             <label for="besked">Besked</label>
-            <textarea id="besked" cols="10" rows="10"></textarea>
-
-            <fieldset>
-                <legend> Vil du kontaktes telefonisk eller på e-mail?</legend>
-
-                <input id="tlf" type="radio" name="kontakt">
-                <label for="tlf">Telefon</label>
-
-                <input id="mail" type="radio" name="kontakt">
-                <label for="mail">E-mail</label>
-
-            </fieldset>
-
-             <input type="submit" name="submit" value="Send besked">
+        <input type="submit" name="submit" value="Send besked">
         </form>
-
-
  </main>
 
 

@@ -1,7 +1,7 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -20,11 +20,9 @@ p {
 /*navigation*/
 
   header {
-    display: flex;
-    justify-content: space-between; 
-    background-color: white;
-  
-
+  display: flex;
+  justify-content: space-between; 
+  background-color: white;
  } 
 
  .logo {
@@ -35,23 +33,23 @@ p {
  }
   
   header > nav {
-        display: none; /* skjuler nav-elementet i mobil-versionen */
-    }
+  display: none; /* skjuler nav-elementet i mobil-versionen */
+ }
  
-
 nav ul {
-
-    color: #000;
-    text-align: center;
-    font-size: 22px;
-    list-style: none; 
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  list-style: none; 
 }
+
 nav li {
   padding-bottom: 1em;
 }
+
 nav a {
-    color:#000;
-    text-decoration: none;
+  color:#000;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -60,37 +58,35 @@ nav a:hover {
 
   /* drop down menuen*/  
 .show {
-        display: block;
-        z-index: 1;
-        position: absolute;
-        top: 49px;
-        right: 10;
-        background-color: white; 
-        width: 100%;
-   }
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 49px;
+  right: 10;
+  background-color: white; 
+  width: 100%;
+}
 
  button#bars {
-    
-    background-color: transparent;
-    border: none;
-    color: #000;
-
+  background-color: transparent;
+  border: none;
+  color: #000;
 }
 
 /* indhold på forsiden*/
 
 .hero {
   background-color: #000;
-    position: relative;
-    width:100%;
-    height: 25vh;
-    overflow: hidden;
+  position: relative;
+  width:100%;
+  height: 25vh;
+  overflow: hidden;
 }
 
 
 .hero-video {
   position: absolute;
-  opacity: 40%;
+  opacity: 30%;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -106,6 +102,7 @@ nav a:hover {
   top: 30%;
   
 }
+
 .forsidetekst {
  margin: 10px 0;
 }
@@ -120,7 +117,6 @@ nav a:hover {
 text-align: center;
 padding: 15px 40px;
 }
-
 
 /*indhold på forside*/ 
 /*boksen*/
@@ -153,16 +149,16 @@ padding: 15px 40px;
 }
 
 main section:nth-child(3) {
-   background-color: #9dc8b7;
-   padding-top: 2em;
-   padding-bottom: 2em;
+  background-color: #9dc8b7;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .sektion3 img{
-    width: 40vh;
-    display: block; 
-    margin: 0 auto;
-    padding: 1.5em;
+  width: 40vh;
+  display: block; 
+  margin: 0 auto;
+  padding: 1.5em;
 }
 
 .sektion3 p {
@@ -170,25 +166,27 @@ main section:nth-child(3) {
   padding: 15px 20px;
   text-align: center;
 }
+
 .sektion3 .larmere {
   display: block;
    width: 70%;
    margin: 0 auto 1.5em auto;
 }
 
-        /* Lær mere siden */
-
-
+/* Lær mere siden */
 .larmereoverskrift {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
 
-
 .larmereimg {
   width:100%;
-  height: 30vh;
+  height: 300px;  
+  object-fit: cover;  
+  object-position: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .tekst1 p, .tekst2 p, .tekst3 p, .tekst4 p, .tekst5 p, .tekst6 p, .tekst7 p, .tekst11 p {
   margin-bottom: 20px;
@@ -235,38 +233,31 @@ main section:nth-child(3) {
   padding:1em;
 }
 
-
 /* dit tøj siden */
 .dittojoverskrift, .dittojoverskrift1 {
   margin: 1em;
   font-size: 20px;
 }
  
-
 .vaskeguide p, .vaskeguide h3{
 margin-left: 1em;
 margin-bottom: 1em;
 }
 
+/*kontakt os siden*/
 
-
-  /*kontakt os siden*/
-
-      .contact-img {
-     
+.contact-img {  
   width: 100%;
   height: 225px;
   object-fit: cover;
-   }
+}
+
 .contact-section {
   display: grid;
   grid-template-rows: auto auto auto; /* 3 sektioner: header, info, form */
-  gap: 50px; /* luft mellem sektioner */
+  gap: 50px; 
   text-align: center;
 }
-
-
-
 
 /*-kontakt info sektionen-*/
 
@@ -277,7 +268,6 @@ margin-bottom: 1em;
   grid-template-rows: auto auto;
   gap: 20px;
 }
-
 
 .phone, .email {
   font-size: 40px;
@@ -292,13 +282,14 @@ margin-bottom: 1em;
 .info-text a {
   color: black;
 }
-/*------ kontakt formen ----*/
+
+/*kontakt formen*/
 .kontaktform {
   border-radius: 5px;
   background-color: #70a38f;
   padding: 1.3em;
   width: 90%;
-  margin: 0 auto; /*Centrerer elementet på siden*/
+  margin: 0 auto;
 }
 
 input[type=text], input[type=email], input[type=tel], input[type=adress], select, textarea {
@@ -324,7 +315,7 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
-   background-color: #3f745e;
+  background-color: #3f745e;
   color: white;
   border: none;
   padding: 15px 40px;
@@ -350,10 +341,6 @@ input[type=submit]:hover {
 	width: 1px;
 }
 
-
-
-
-
 /* --- KNAP --- */
 button {
   background-color: #3f745e;
@@ -363,28 +350,24 @@ button {
   font-size: 16px;
   border-radius: 40px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #3f745e;
+  background-color: #3E6857;
 }
-
-
 
 /*footeren*/
 
 .footer {
-     left: 0;
-   bottom: 0;
-   background-color: #FF5A39 ;
-   color: rgb(0, 0, 0);
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   gap: 2em;
-      padding: 2rem 1rem;
-
+  left: 0;
+  bottom: 0;
+  background-color: #FF5A39 ;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2em;
+  padding: 2rem 1rem;
 }
 
 .footer div {
@@ -410,48 +393,46 @@ button:hover {
     display:none
   }
 
-   header > nav {
-        display:flex /* skjuler nav-elementet i mobil-versionen */
-    }
+ header > nav {
+  display:flex /* skjuler nav-elementet i mobil-versionen */
+  }
    
   nav {   
-    padding: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
 }
+
 .logo{
   display: flex;
   margin-top: 15px;
   margin-left: 15px;
-width: 30vh;
-height: auto;
+  width: 30vh;
+  height: auto;
 }
 
 nav ul {
-    color: #000;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 22px;
-      
+  color: #000;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22px;    
 }
+
 nav a {
-    color:#000;
-    text-decoration: none;
-    display: inline-block;
-    padding: 2em;
+  color:#000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2em;
 }
-
-
 
 /* main på forsiden */
 .hero {
-    position: relative;
-    width:100%;
-    height:60vh;
-    overflow: hidden;
-  
+  position: relative;
+  width:100%;
+  height:60vh;
+  overflow: hidden;
 }
 
 .hero-video {
@@ -463,6 +444,7 @@ nav a {
   object-fit: cover;
   z-index: 0;
 }
+
 .hero-content {
   position: relative;
   z-index: 1;
@@ -470,11 +452,12 @@ nav a {
   text-align: center;
   top: 40%;
   padding:1em;
-  
 }
+
 .hero p {
   font-size: 22px;
 }
+
 .contact-img{
   position: relative;
   top: 0;
@@ -489,49 +472,45 @@ nav a {
   border-bottom: 0vh;
 }
     
-
  main section:nth-of-type(3){
-        width: 100vw;
-        margin: 0 auto;
-        margin-top: 8vh;
-    }
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 8vh;
+}
 
-    .sektion3{
-        display: flex;
-        gap: 1em;
-    }
+.sektion3{
+  display: flex;
+  gap: 1em;
+}
 
-    .sektion3 img{
-        width: 50%;
-        padding-right: 1em;
-    }
-    .sektion3 p{
-      margin-top: 5vh;
-      text-align: start;
-    }
+.sektion3 img{
+  width: 50%;
+  padding-right: 1em;
+}
+.sektion3 p{
+  margin-top: 5vh;
+  text-align: start;
+ }
   
-    .sektion3 .larmere{
-        margin-top: 30vh;
-    }
+.sektion3 .larmere{
+  margin-top: 30vh;
+  }
 
-    /* lær mere siden */
+/* lær mere siden */
 
- 
-    
 .overst {
   text-align: start;
 }
-    .larmereimg {
-    position: relative;
-  width: 100vw;
-  height: 50vh;
-  object-fit: cover;
-  margin-bottom: 2em;
-    }
+.larmereimg {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;  
+  object-position:center 45%;
+   }
 
-   .tekst3, .larmereimg2 {
+.tekst3, .larmereimg2 {
   margin-bottom: 2em;
-    }
+  }
 
 .tekst1 h3, .tekst2 h3, .tekst3 h3, .tekst4 h3, .tekst5 h3, .tekst6 h3, .tekst7 h3, .tekst11 h3 {
   display: flex; 
@@ -545,14 +524,14 @@ nav a {
 }
 
 .tekst3flex, .larmereimg2, .tekst5flex, .img5{
-        display: flex;
-        gap: 1em;
-
+  display: flex;
+  gap: 1em;
 }
+
 .tekst3flex img, .tekst5flex .img5{
-        margin-top: 1em;
-        width: 65vh;
-    }
+  margin-top: 1em;
+  width: 65vh;
+  }
   
 .larmereimg3 {
   display:none;
@@ -564,30 +543,19 @@ nav a {
   justify-content: center;
 }
 
-
-
-     /*kontakt siden*/
- .kontaktform {
+/*kontakt siden*/
+.kontaktform {
   width: 50%;
   height: auto;
  }
-
-    /*footeren*/
-  
+ /*footeren*/
 .footer {
-     display: flex;
-   justify-content: space-around;
-   text-align: center;
-   padding: 2em 1em;
-      padding: 2rem 1rem;
-   flex-wrap: wrap;
-  
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2em 1em;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
 }
-
-
-
-
-
-
 
 }
